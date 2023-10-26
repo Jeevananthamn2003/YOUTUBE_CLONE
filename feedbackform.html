@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Student Feedback Form</title>
+<style>
+    .container {
+        width: 80%;
+        margin: 0 auto;
+      }
+      
+      h1 {
+        text-align: center;
+      }
+      
+      form {
+        display: flex;
+        flex-direction: column;
+      }
+      
+      label {
+        font-weight: bold;
+      }
+      
+      input, textarea {
+        padding: 10px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+        border: none;
+        box-shadow: 1px 1px 2px grey;
+      }
+      
+      button[type="submit"] {
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        background-color: #4CAF50;
+        color: white;
+        font-size: 18px;
+        cursor: pointer;
+      }
+      
+      button[type="submit"]:hover {
+        background-color: #2E8B57;
+      }
+    </style>
+      </head>
+<body style="background-color: cadetblue;">
+	<div class="container">
+		<h1>Student Feedback Form</h1>
+		<form action="#" method="POST">
+			<label for="name">Name:</label>
+			<input type="text" id="name" name="name" required>
+
+			<label for="roll">Roll Number:</label>
+			<input type="text" id="roll" name="roll" required>
+
+			<label for="email">Email:</label>
+			<input type="email" id="email" name="email" required>
+
+			<label for="feedback">Feedback:</label>
+			<textarea id="feedback" name="feedback" required></textarea>
+<br>
+			<label for="session">How was the session?</label>
+			<select id="session" name="session">
+				<option value="excellent">Excellent</option>
+				<option value="good">Good</option>
+				<option value="fair">Fair</option>
+				<option value="poor">Poor</option>
+			</select>
+<br><br>
+			<label for="rating">Rating:</label>
+			<input type="range" id="rating" name="rating" min="1" max="10" required>
+<br>
+			<button type="submit">Submit Feedback</button>
+		</form>
+	</div>
+</body>
+</html>
